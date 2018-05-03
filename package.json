@@ -1,6 +1,6 @@
 {
   "name": "loadtester",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "loadtester lib to build and measure your website's performance.",
   "main": "index.js",
   "scripts": {
