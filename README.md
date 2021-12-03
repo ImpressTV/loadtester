@@ -21,16 +21,16 @@ var myLoadTester = new LoadTester({
   requestPerSec: 10,
 });
 // start the load test
-loadTester.start();
+myLoadTester.start();
 // print progress to the console (and refresh every second).
 setInterval(function () {
-  consoleUI.printStatsPage(loadTester.stats());
+  consoleUI.printStatsPage(myLoadTester.stats());
 }, 1000);
 
 // Exit on CTRL+C and display detailed stats
 process.on('SIGINT', function () {
-  loadTester.stop();
-  consoleUI.printStatsPage(loadTester.stats(true));
+  myLoadTester.stop();
+  consoleUI.printStatsPage(myLoadTester.stats(true));
   process.exit();
 });
 
